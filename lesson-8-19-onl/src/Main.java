@@ -46,6 +46,7 @@ public class Main {
             Operation result = calculator.calculate(operation);
 
             consoleWriter.write("Result: " + result.getResult());
+// Домашнее задание
             t = work.working();
 
         }
