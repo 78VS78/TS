@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Arrays;
 
 /**
  * @author Simon Pirko on ${DATE}
@@ -32,6 +33,10 @@ public class Main {
         ConsoleReader consoleReader = new ConsoleReader();
         Scanner scanner = new Scanner(System.in);
         Work work = new Work();
+
+        SaveInMemory saveInMemory =new SaveInMemory();
+
+
         boolean t = true;
         while (t) {
             consoleWriter.write("Enter number 1");
@@ -45,11 +50,14 @@ public class Main {
 
             Operation result = calculator.calculate(operation);
 
+            saveInMemory.save(operation);
+
             consoleWriter.write("Result: " + result.getResult());
 // Домашнее задание
             t = work.working();
-
         }
+        System.out.println(Arrays.toString(saveInMemory.outRes()));
+
     }
 
 }

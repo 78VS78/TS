@@ -4,16 +4,13 @@ package calculator;
  * @author Simon Pirko on 9.01.23
  */
 public class ConsoleApplication implements Application {
-
 	OperationStorage storage = new InMemoryOperationStorage();
-
 	Calculator calculator = new Calculator();
-
 	Reader reader = new ConsoleReader();
-
 	Writer writer = new ConsoleWriter();
-
 	public void run() {
+		int i=0;
+
 		while (true) {
 			writer.write("Enter num 1");
 			double num1 = reader.readDouble();
@@ -22,10 +19,14 @@ public class ConsoleApplication implements Application {
 			writer.write("Enter operation type");
 			String type = reader.readString();
 			Operation op = new Operation(num1, num2, type);
+
 			Operation result = calculator.calculate(op);
-			storage.save(result);
+
+			storage.save(op);
+
 			writer.write("Result = " + result.result);
 			writer.write("");
+
 			Operation[] all = storage.findAll();
 		}
 	}
