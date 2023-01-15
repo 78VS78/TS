@@ -56,6 +56,7 @@ public class Main {
 // Домашнее задание
             t = work.working();
         }
+        System.out.println();
         System.out.println(Arrays.toString(saveInMemory.outRes()));
 
     }

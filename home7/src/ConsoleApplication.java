@@ -22,7 +22,7 @@ public class ConsoleApplication implements Application {
 
 			Operation result = calculator.calculate(op);
 
-			storage.save(op);
+			//			storage.save(op);
 
 			writer.write("Result = " + result.result);
 			writer.write("");

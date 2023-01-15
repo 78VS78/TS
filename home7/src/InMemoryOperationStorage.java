@@ -9,11 +9,11 @@ public class InMemoryOperationStorage implements OperationStorage {
 
     public void save(Operation operation) {
 
-        for (int i = 0; i < operations.length; i++) {
-            operations[i] = operation;
-            if (i == 10) {
-                i = 0;
-            }
+     //   for (int i = 0; i < operations.length; i++) {
+     //       operations[i] = operation;
+     //       if (i == 10) {
+     //           i = 0;
+     //       }
         }
         // home work
     }

@@ -33,4 +33,7 @@ public class Operation {
 		this.result = result;
 		return this;
 	}
+	public String toString(){
+		return num1 + "," + num2 + "," + type;
+	}
 }
