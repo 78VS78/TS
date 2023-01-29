@@ -1,6 +1,5 @@
 import java.io.*;
-
-
+//import java.nio.*;
 public class FileWorking {
 
 
@@ -24,6 +23,18 @@ public class FileWorking {
             writer.flush();
         } catch (IOException ex) {
             System.out.println(ex.getMessage());
+        }
+    }
+
+    public void FileInfo(String nameFile) {
+        File file = new File(nameFile);
+        if (file.exists()) {
+            System.out.println("файл находится: ");
+            System.out.println(file.getAbsolutePath());
+            System.out.println("Размер файла в байт:");
+            System.out.println(file.length());
+           } else {
+            System.out.println("файл не найден");
         }
     }
 }

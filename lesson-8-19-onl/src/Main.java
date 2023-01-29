@@ -37,6 +37,7 @@ public class Main {
         //   System.out.println(Arrays.toString(saveInMemory.outRes()));
 
         fl.FileReader("calc.txt");
+        fl.FileInfo("calc.txt");
     }
 }
 
