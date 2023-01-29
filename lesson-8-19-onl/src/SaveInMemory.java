@@ -1,6 +1,6 @@
 public class SaveInMemory {
-    public Operation[] res = new Operation[10];
-    public int i;
+    private Operation[] res = new Operation[10];
+    private int i;
 
     public void save (Operation operation) {
         res[i] = operation;
