@@ -3,7 +3,7 @@ import java.io.*;
 public class FileWorking {
 
 
-    public void fileReader(String nameFile) {
+    public void FileReader(String nameFile) {
         File file = new File(nameFile);
         try (BufferedReader br = new BufferedReader(new FileReader(file))) {
             String line;
@@ -15,7 +15,7 @@ public class FileWorking {
         }
     }
 
-    public void fileWriter(String nameFile, String line) {
+    public void FileWriter(String nameFile, String line) {
         try (FileWriter writer = new FileWriter(nameFile, true)) {
             // запись всей строки
             writer.write(line);
@@ -26,7 +26,7 @@ public class FileWorking {
         }
     }
 
-    public void fileInfo(String nameFile) {
+    public void FileInfo(String nameFile) {
         File file = new File(nameFile);
         if (file.exists()) {
             System.out.println("файл находится: ");

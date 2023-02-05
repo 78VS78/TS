@@ -27,7 +27,7 @@ public class Main {
             Operation operation = new Operation(num1, num2, type);
             Operation result = calculator.calculate(operation);
             saveInMemory.save(operation);
-            fl.fileWriter("calc.txt", operation.toString());
+            fl.FileWriter("calc.txt", operation.toString());
             consoleWriter.write("Result: " + result.getResult());
 
 // Домашнее задание
@@ -36,8 +36,8 @@ public class Main {
         //   System.out.println();
         //   System.out.println(Arrays.toString(saveInMemory.outRes()));
 
-        fl.fileReader("calc.txt");
-        fl.fileInfo("calc.txt");
+        fl.FileReader("calc.txt");
+        fl.FileInfo("calc.txt");
     }
 }
 
