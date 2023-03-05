@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5e0ee3e6-7b02-4807-9c17-20b9dc62f982" name="Changes" comment="home postgresql">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/postgresql_42_5_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calc.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home17.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/postgresql-42.5.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/console/ConsoleReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/console/ConsoleWriter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entity/Operation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/FileWorking.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/JDBCOperationStorage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/SaveInMemory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/SaveToBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/Work.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/validator/Valid.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2LxxIgmciFNxWeHUeUbbrGniVnV" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "database.data.extractors.current.export.id": "SQL Updates",
+    "database.data.extractors.current.id": "SQL Updates",
+    "last_opened_file_path": "C:/proj/home17/lib/postgresql-42.5.4.jar",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="home17" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5e0ee3e6-7b02-4807-9c17-20b9dc62f982" name="Changes" comment="" />
+      <created>1676826457139</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1676826457139</updated>
+      <workItem from="1676826458875" duration="1087000" />
+      <workItem from="1676828762871" duration="974000" />
+      <workItem from="1676830203012" duration="588000" />
+      <workItem from="1676830815840" duration="121000" />
+      <workItem from="1676831004618" duration="353000" />
+      <workItem from="1676831538811" duration="5035000" />
+      <workItem from="1678031094892" duration="4214000" />
+      <workItem from="1678035417856" duration="1142000" />
+      <workItem from="1678036677140" duration="3857000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="home postgresql" />
+    <option name="LAST_COMMIT_MESSAGE" value="home postgresql" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.util.InputMismatchException" package="java.util" />
+          <option name="timeStamp" value="9" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

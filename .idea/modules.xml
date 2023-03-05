@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/home2/home2.iml" filepath="$PROJECT_DIR$/home2/home2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/home2_1/home2_1.iml" filepath="$PROJECT_DIR$/home2_1/home2_1.iml" />
-      <module fileurl="file://$PROJECT_DIR$/home3/home3.iml" filepath="$PROJECT_DIR$/home3/home3.iml" />
-      <module fileurl="file://$PROJECT_DIR$/home5/home5.iml" filepath="$PROJECT_DIR$/home5/home5.iml" />
-      <module fileurl="file://$PROJECT_DIR$/home6/home6.iml" filepath="$PROJECT_DIR$/home6/home6.iml" />
-      <module fileurl="file://$PROJECT_DIR$/home7/home7.iml" filepath="$PROJECT_DIR$/home7/home7.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lesson-8-19-onl/lesson-8-19-onl.iml" filepath="$PROJECT_DIR$/lesson-8-19-onl/lesson-8-19-onl.iml" />
-      <module fileurl="file://$PROJECT_DIR$/proj.iml" filepath="$PROJECT_DIR$/proj.iml" />
+      <module fileurl="file://$PROJECT_DIR$/home17.iml" filepath="$PROJECT_DIR$/home17.iml" />
     </modules>
   </component>
 </project>
