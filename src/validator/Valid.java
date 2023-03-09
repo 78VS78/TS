@@ -3,13 +3,16 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Valid {
-    public boolean validateDouble(String num) {
-//                C=\\d+.\\d+
-//        [0-9]*.?[0-9]+
-        Pattern pattern = Pattern.compile("^[\\\\-]{0,1}[0-9]+[\\\\.\\\\,][0-9]+$");
+    public static boolean validateDouble(String num) {
+
+        Pattern pattern = Pattern.compile("\\-\\d*\\.?\\d{0,20}|\\d*\\.?\\d{0,20}");
         Matcher matcher = pattern.matcher(num);
         return matcher.matches();
     }
-
+    public static boolean validateType(String type){
+        Pattern pattern = Pattern.compile("^sum$|^sub$|^div$|^mul$");
+        Matcher matcher = pattern.matcher(type);
+        return matcher.matches();
+    }
 
 }

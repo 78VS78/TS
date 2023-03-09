@@ -1,5 +1,7 @@
+import java.util.List;
 import java.util.Scanner;
 import java.util.Arrays;
+
 import console.ConsoleReader;
 import console.ConsoleWriter;
 import entity.Operation;
@@ -8,6 +10,9 @@ import service.Calculator;
 import service.JDBCOperationStorage;
 import service.SaveInMemory;
 import utils.Work;
+import validator.Valid;
+
+import javax.xml.validation.Validator;
 //import validator.Valid;
 
 
@@ -21,23 +26,45 @@ public class Main {
         SaveInMemory saveInMemory = new SaveInMemory();
         //FileWorking fl = new FileWorking();
         JDBCOperationStorage jdbcOperationStorage = new JDBCOperationStorage();
-        boolean t = true;
-        while (t) {
-            consoleWriter.write("Enter number 1");
-            double num1 = consoleReader.readNumber();
-            consoleWriter.write("Enter number 2");
-            double num2 = consoleReader.readNumber();
-            consoleWriter.write("Operation type");
 
-            String type = consoleReader.readOperationType();
+        boolean t = true;
+        double num1, num2;
+        String type;
+        while (t) {
+
+            while (true) {
+                consoleWriter.write("Enter number 1");
+                String line = consoleReader.readNumber();
+                if (Valid.validateDouble(line)) {
+                    num1 = Double.valueOf(line);
+                    break;
+                }
+            }
+
+            while (true) {
+                consoleWriter.write("Enter number 1");
+                String line = consoleReader.readNumber();
+                if (Valid.validateDouble(line)) {
+                    num2 = Double.valueOf(line);
+                    break;
+                }
+            }
+
+            while (true) {
+                consoleWriter.write("Operation type");
+                String line = consoleReader.readOperationType();
+                if (Valid.validateType(line)) {
+                    type = line;
+                    break;
+                }
+            }
 
             Operation operation = new Operation(num1, num2, type);
             Operation result = calculator.calculate(operation);
             saveInMemory.save(operation);
 
-         //   fl.fileWriter("calc.txt", operation.toString());
-
-           jdbcOperationStorage.save(new Operation(num1,num2,type, result.getResult()));
+            System.out.println(type);
+            jdbcOperationStorage.save(new Operation(num1, num2, type, result.getResult()));
 
 
             consoleWriter.write("Result: " + result.getResult());
@@ -46,19 +73,14 @@ public class Main {
             t = work.working();
         }
 
-           System.out.println();
-           System.out.println(Arrays.toString(saveInMemory.outRes()));
-
-        //fl.fileReader("calc.txt");
-        //fl.fileInfo("calc.txt");
-
-  //      consoleWriter.write("Введи double");
-  //      String type = consoleReader.readOperationType();
-        //Valid vl = new Valid();
-        //System.out.println(vl.validateDouble(type));
+        List<Operation> all = jdbcOperationStorage.findAll();
+        System.out.println(all);
 
 
     }
 }
+
+
+
 
 

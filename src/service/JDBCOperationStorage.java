@@ -20,7 +20,7 @@ public class JDBCOperationStorage {
   public void save(Operation operation) {
     PreparedStatement preparedStatement = null;
     try {
-      preparedStatement = connection.prepareStatement("insert into operation(num1, num2, type, result) values (?, ?, ?, ?)");
+      preparedStatement = connection.prepareStatement("insert into operation(num1, num2,type , result) values (?, ?, ?, ?)");
       preparedStatement.setDouble(1, operation.getNum1());
       preparedStatement.setDouble(2, operation.getNum2());
       preparedStatement.setString(3, operation.getType());
